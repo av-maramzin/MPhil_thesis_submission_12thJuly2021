@@ -1,0 +1,2056 @@
+
+% Publishers
+
+@String{acm = "{ACM}" }
+@String{acm-address = "{New York, NY, USA}" }
+
+@String{ieee = "{IEEE Computer Society}" }
+@String{ieee-address = "{Washington, DC, USA}" }
+
+@String{springer = "{Springer}" }
+@String{springer-address = "{Heidelberg, Germany}" }
+
+@inbook{fastflow,
+authors = {Aldinucci, Marco and Danelutto, Marco and Kilpatrick, Peter and Torquati, Massimo},
+year = {2014},
+month = {03},
+pages = {},
+title = {Fastflow: High-Level and Efficient Streaming on Multicore},
+isbn = {9780470936900},
+journal = {Programming Multicore and Many-Core Computing Systems},
+doi = {10.1002/9781119332015.ch13}
+}
+
+@ARTICLE{standrewsposix,
+authors = {Janjic Vladimir, Brown Christopher, Barwell Adam D.},
+journal = {International Journal of Parallel Programming},
+title = {Restoration of Legacy Parallelism: Transforming Pthreads into Farm and Pipeline Patterns}, 
+year = {2021},
+doi = {10.1007/s10766-021-00716-z},
+url = {https://doi.org/10.1007/s10766-021-00716-z},
+}
+
+@ARTICLE{1702388,
+author = {McCabe, T.J.},
+journal = {IEEE Transactions on Software Engineering}, 
+title = {A Complexity Measure}, 
+year = {1976},
+volume = {SE-2},
+number = {4},
+pages = {308-320},
+doi = {10.1109/TSE.1976.233837}
+}
+
+@misc{gnu-compiler,
+author = {GNU Project},
+title = {GCC, the GNU Compiler Collection},
+url = {https://gcc.gnu.org/},
+}
+
+@article{tree-reductions-paper,
+author = {Matsuzaki, Kiminori and Miyazaki, Reina},
+title = {Parallel Tree Accumulations on MapReduce},
+year = {2016},
+issue_date = {June      2016},
+publisher = {Kluwer Academic Publishers},
+address = {USA},
+volume = {44},
+number = {3},
+issn = {0885-7458},
+url = {https://doi.org/10.1007/s10766-015-0355-8},
+doi = {10.1007/s10766-015-0355-8},
+abstract = {MapReduce is a remarkable parallel programming model as well as a parallel processing
+infrastructure for large-scale data processing. Since it is now widely available on
+cloud environments, developing methodology or patterns for MapReduce programming is
+important. In particular, XML is the de facto standard for representing data, and
+processing semi-structured data is involved in many applications. The target computational
+patterns in this paper are tree accumulations. Tree accumulations are shape-preserving
+computations over a tree in which values are updated through flows over the tree.
+We develop BSP algorithms for two tree accumulations as extensions of the BSP algorithm
+for tree reduction by Kakehi et al. (Tech. Rep. METR 2006-64, Department of Mathematical
+Informatics, Graduate School of Information Science and Technology, The University
+of Tokyo, 2006). We also implemented the two-superstep algorithms with a single MapReduce
+execution. Experimental results on a 16-node PC cluster show good speedups of a factor
+of 10.9---12.7.},
+journal = {Int. J. Parallel Program.},
+month = jun,
+pages = {466–485},
+numpages = {20},
+keywords = {Tree accumulations, MapReduce, Hadoop, Bulk synchronous parallel (BSP) model}
+}
+
+@INPROCEEDINGS{9092377,
+authors = {Brown, C. and Janjic, V. and Barwell, A. and Thomson, J. and Lozano, R. Castañeda and Cole, M. and Franke, B. and Garcia-Sanchez, J.D. and Astorga, D. Del Rio and MacKenzie, K.},
+booktitle = {2020 28th Euromicro International Conference on Parallel, Distributed and Network-Based Processing (PDP)}, 
+title = {A Hybrid Approach to Parallel Pattern Discovery in C++}, 
+year = {2020},
+volume = {},
+number = {},
+pages = {187-191},
+doi = {10.1109/PDP50117.2020.00035}
+}
+
+@INPROCEEDINGS{7445342,
+authors = {Janjic, V. and Brown, C. and Mackenzie, K. and Hammond, K. and Danelutto, M. and Aldinucci, M. and Garcia, J. Daniel},
+booktitle = {2016 24th Euromicro International Conference on Parallel, Distributed, and Network-Based Processing (PDP)}, 
+title = {RPL: A Domain-Specific Language for Designing and Implementing Parallel C++ Applications}, 
+year = {2016},
+volume={},
+number={},
+pages={288-295},
+doi={10.1109/PDP.2016.122}
+}
+
+@inproceedings{10.1109/ISCA.2006.31,
+author = {Balakrishnan, Saisanthosh and Sohi, Gurindar S.},
+title = {Program Demultiplexing: Data-Flow Based Speculative Parallelization of Methods in Sequential Programs},
+year = {2006},
+isbn = {076952608X},
+publisher = {IEEE Computer Society},
+address = {USA},
+url = {https://doi.org/10.1109/ISCA.2006.31},
+doi = {10.1109/ISCA.2006.31},
+abstract = {We present Program Demultiplexing (PD), an execution paradigm that creates concurrency
+in sequential programs by "demultiplexing" methods (functions or subroutines). Call
+sites of a demultiplexed method in the program are associated with handlers that allow
+the method to be separated from the sequential program and executed on an auxiliary
+processor. The demultiplexed execution of a method (and its handler) is speculative
+and occurs when the inputs of the method are (speculatively) available, which is typically
+far in advance of when the method is actually called in the sequential execution.
+A trigger, composed of predicates that are based on program counters and memory write
+addresses, launches the speculative execution of the method on another processor.
+Our implementation of PD is based on a full-system execution-based chip multi-processor
+simulator with software to generate triggers and handlers from an x86- program binary.
+We evaluate eight integer benchmarks from the SPEC2000 suite .programs written in
+C with no explicit concurrency and/or motivation to create concurrency. and achieve
+a harmonic mean speedup of 1.8x with our implementation of PD.},
+booktitle = {Proceedings of the 33rd Annual International Symposium on Computer Architecture},
+pages = {302–313},
+numpages = {12},
+series = {ISCA '06}
+}
+
+@article{10.1145/1150019.1136512,
+author = {Balakrishnan, Saisanthosh and Sohi, Gurindar S.},
+title = {Program Demultiplexing: Data-Flow Based Speculative Parallelization of Methods in Sequential Programs},
+year = {2006},
+issue_date = {May 2006},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {34},
+number = {2},
+issn = {0163-5964},
+url = {https://doi.org/10.1145/1150019.1136512},
+doi = {10.1145/1150019.1136512},
+abstract = {We present Program Demultiplexing (PD), an execution paradigm that creates concurrency
+in sequential programs by "demultiplexing" methods (functions or subroutines). Call
+sites of a demultiplexed method in the program are associated with handlers that allow
+the method to be separated from the sequential program and executed on an auxiliary
+processor. The demultiplexed execution of a method (and its handler) is speculative
+and occurs when the inputs of the method are (speculatively) available, which is typically
+far in advance of when the method is actually called in the sequential execution.
+A trigger, composed of predicates that are based on program counters and memory write
+addresses, launches the speculative execution of the method on another processor.
+Our implementation of PD is based on a full-system execution-based chip multi-processor
+simulator with software to generate triggers and handlers from an x86- program binary.
+We evaluate eight integer benchmarks from the SPEC2000 suite .programs written in
+C with no explicit concurrency and/or motivation to create concurrency. and achieve
+a harmonic mean speedup of 1.8x with our implementation of PD.},
+journal = {SIGARCH Comput. Archit. News},
+month = may,
+pages = {302–313},
+numpages = {12}
+}
+
+@INPROCEEDINGS{4147670, 
+authors = {Agarwal, Mayank and Malik, Kshitiz and Woley, Kevin M. and Stone, Sam S. and Frank, Matthew I.}, 
+booktitle = {2007 IEEE 13th International Symposium on High Performance Computer Architecture},
+title = {Exploiting Postdominance for Speculative Parallelization}, 
+year = {2007}, 
+volume={}, 
+number={}, 
+pages={295-305}, doi={10.1109/HPCA.2007.346207}
+} 
+
+@article{10.1016/j.parco.2010.05.006,
+author = {Rul, Sean and Vandierendonck, Hans and De Bosschere, Koen},
+title = {A Profile-Based Tool for Finding Pipeline Parallelism in Sequential Programs},
+year = {2010},
+issue_date = {September, 2010},
+publisher = {Elsevier Science Publishers B. V.},
+address = {NLD},
+volume = {36},
+number = {9},
+issn = {0167-8191},
+url = {https://doi.org/10.1016/j.parco.2010.05.006},
+doi = {10.1016/j.parco.2010.05.006},
+abstract = {Traditional static analysis fails to auto-parallelize programs with a complex control
+and data flow. Furthermore, thread-level parallelism in such programs is often restricted
+to pipeline parallelism, which can be hard to discover by a programmer. In this paper
+we propose a tool that, based on profiling information, helps the programmer to discover
+parallelism. The programmer hand-picks the code transformations from among the proposed
+candidates which are then applied by automatic code transformation techniques. This
+paper contributes to the literature by presenting a profiling tool for discovering
+thread-level parallelism. We track dependencies at the whole-data structure level
+rather than at the element level or byte level in order to limit the profiling overhead.
+We perform a thorough analysis of the needs and costs of this technique. Furthermore,
+we present and validate the belief that programs with complex control and data flow
+contain significant amounts of exploitable coarse-grain pipeline parallelism in the
+program's outer loops. This observation validates our approach to whole-data structure
+dependencies. As state-of-the-art compilers focus on loops iterating over data structure
+members, this observation also explains why our approach finds coarse-grain pipeline
+parallelism in cases that have remained out of reach for state-of-the-art compilers.
+In cases where traditional compilation techniques do find parallelism, our approach
+allows to discover higher degrees of parallelism, allowing a 40\% speedup over traditional
+compilation techniques. Moreover, we demonstrate real speedups on multiple hardware
+platforms.},
+journal = {Parallel Comput.},
+month = sep,
+pages = {531–551},
+numpages = {21},
+keywords = {Coarse-grain parallelism, Profile-based parallelization, Feedback directed analysis, Auto-parallelization, Pipeline parallelism}
+}
+
+@inproceedings{10.5555/822079.822712,
+author = {Steffan, J. and Mowry, T},
+title = {The Potential for Using Thread-Level Data Speculation to Facilitate Automatic Parallelization},
+year = {1998},
+isbn = {0818683236},
+publisher = {IEEE Computer Society},
+address = {USA},
+booktitle = {Proceedings of the 4th International Symposium on High-Performance Computer Architecture},
+pages = {2},
+series = {HPCA '98}
+}
+
+@inproceedings{10.1145/1122971.1122997,
+author = {Liu, Wei and Tuck, James and Ceze, Luis and Ahn, Wonsun and Strauss, Karin and Renau, Jose and Torrellas, Josep},
+title = {POSH: A TLS Compiler That Exploits Program Structure},
+year = {2006},
+isbn = {1595931899},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1122971.1122997},
+doi = {10.1145/1122971.1122997},
+abstract = {As multi-core architectures with Thread-Level Speculation (TLS) are becoming better
+understood, it is important to focus on TLS compilation. TLS compilers are interesting
+in that, while they do not need to fully prove the independence of concurrent tasks,
+they make choices of where and when to generate speculative tasks that are crucial
+to overall TLS performance.This paper presents POSH, a new, fully automated TLS compiler
+built on top of gcc. POSH is based on two design decisions. First, to partition the
+code into tasks, it leverages the code structures created by the programmer, namely
+subroutines and loops. Second, it uses a simple profiling pass to discard ineffective
+tasks. With the code generated by POSH, a simulated TLS chip multiprocessor with 4
+superscalar cores delivers an average speedup of 1.30 for the SPECint 2000 applications.
+Moreover, an estimated 26\% of this speedup is a result of the implicit data prefetching
+provided by squashed tasks.},
+booktitle = {Proceedings of the Eleventh ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+pages = {158–167},
+numpages = {10},
+keywords = {TLS compiler, multi-core architecture, prefetching, profiling, thread-level speculation},
+location = {New York, New York, USA},
+series = {PPoPP '06}
+}
+
+@inproceedings{10.1145/291069.291020,
+author = {Hammond, Lance and Willey, Mark and Olukotun, Kunle},
+title = {Data Speculation Support for a Chip Multiprocessor},
+year = {1998},
+isbn = {1581131070},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/291069.291020},
+doi = {10.1145/291069.291020},
+abstract = {Thread-level speculation is a technique that enables parallel execution of sequential
+applications on a multiprocessor. This paper describes the complete implementation
+of the support for threadlevel speculation on the Hydra chip multiprocessor (CMP).
+The support consists of a number of software speculation control handlers and modifications
+to the shared secondary cache memory system of the CMP This support is evaluated using
+five representative integer applications. Our results show that the speculative support
+is only able to improve performance when there is a substantial amount of medium--grained
+loop-level parallelism in the application. When the granularity of parallelism is
+too small or there is little inherent parallelism in the application, the overhead
+of the software handlers overwhelms any potential performance benefits from speculative-thread
+parallelism. Overall, thread-level speculation still appears to be a promising approach
+for expanding the class of applications that can be automatically parallelized, but
+more hardware intensive implementations for managing speculation control are required
+to achieve performance improvements on a wide class of integer applications.},
+booktitle = {Proceedings of the Eighth International Conference on Architectural Support for Programming Languages and Operating Systems},
+pages = {58–69},
+numpages = {12},
+location = {San Jose, California, USA},
+series = {ASPLOS VIII}
+}
+
+@misc{microsoft-ppl,
+author = {Microsoft},
+title = {Parallel Patterns Library (PPL)},
+url = {https://docs.microsoft.com/en-us/cpp/parallel/concrt/parallel-patterns-library-ppl?view=msvc-160},
+}
+
+@misc{intel-tbb,
+author = {Intel},
+title = {Threading Building Blocks},
+url = {http://software.intel.com/en-us/intel-tbb},
+}
+
+@misc{mpi,
+author = {MPI Forum},
+title = {Message Passing Interface},
+url = {https://www.mpi-forum.org/},
+}
+
+@misc{opencl,
+author = {Apple Inc.},
+title = {OpenCL (Open Computing Language)},
+url = {https://opencl.org/},
+}
+
+@misc{cuda,
+author = {Nvidia},
+title = {CUDA (Compute Unified Device Architecture)},
+url = {https://developer.nvidia.com/cuda-zone},
+}
+
+@misc{openmp_specs,
+author = {OpenMP Architecture Review Board},
+title = {The OpenMP API specification for parallel programming},
+url = {https://www.openmp.org/},
+}
+
+@misc{posix_specs,
+author = {ISO IEEE},
+title = {ISO/IEC/IEEE 9945:2009
+Information technology — Portable Operating System Interface (POSIX®) Base Specifications, Issue 7},
+url = {https://www.iso.org/standard/50516.html},
+year = {2021}
+}
+
+@article{10.1145/1400112.1400113,
+author = {Rangan, Ram and Vachharajani, Neil and Ottoni, Guilherme and August, David I.},
+title = {Performance Scalability of Decoupled Software Pipelining},
+year = {2008},
+issue_date = {August 2008},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {5},
+number = {2},
+issn = {1544-3566},
+url = {https://doi.org/10.1145/1400112.1400113},
+doi = {10.1145/1400112.1400113},
+abstract = {Any successful solution to using multicore processors to scale general-purpose program
+performance will have to contend with rising intercore communication costs while exposing
+coarse-grained parallelism. Recently proposed pipelined multithreading (PMT) techniques
+have been demonstrated to have general-purpose applicability and are also able to
+effectively tolerate inter-core latencies through pipelined interthread communication.
+These desirable properties make PMT techniques strong candidates for program parallelization
+on current and future multicore processors and understanding their performance characteristics
+is critical to their deployment. To that end, this paper evaluates the performance
+scalability of a general-purpose PMT technique called decoupled software pipelining
+(DSWP) and presents a thorough analysis of the communication bottlenecks that must
+be overcome for optimal DSWP scalability.},
+journal = {ACM Trans. Archit. Code Optim.},
+month = sep,
+articleno = {8},
+numpages = {25},
+keywords = {Decoupled software pipelining, performance analysis}
+}
+
+@INPROCEEDINGS{1540952,
+author={Ottoni, G. and Rangan, R. and Stoler, A. and August, D.I.},
+booktitle={38th Annual IEEE/ACM International Symposium on Microarchitecture (MICRO'05)}, 
+title={Automatic thread extraction with decoupled software pipelining}, 
+year={2005},
+volume={},
+number={},
+pages={12 pp.-118},
+doi={10.1109/MICRO.2005.13}
+}
+
+@INPROCEEDINGS{1299188,
+author={Stahl, R. and Pasko, R. and Catthoor, F. and Lauwereins, R. and Verkest, D.},
+booktitle={Ninth International Workshop on High-Level Parallel Programming Models and Supportive Environments, 2004. Proceedings.}, 
+title={High-level data-access analysis for characterisation of (sub)task-level parallelism on Java}, 
+year={2004},
+volume={},
+number={},
+pages={31-40},
+doi={10.1109/HIPS.2004.1299188}
+}
+
+@inproceedings{10.1145/125826.126055,
+author = {Hall, Mary W. and Kennedy, Ken and McKinley, Kathryn S.},
+title = {Interprocedural Transformations for Parallel Code Generation},
+year = {1991},
+isbn = {0897914597},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/125826.126055},
+doi = {10.1145/125826.126055},
+booktitle = {Proceedings of the 1991 ACM/IEEE Conference on Supercomputing},
+pages = {424–434},
+numpages = {11},
+location = {Albuquerque, New Mexico, USA},
+series = {Supercomputing '91}
+}
+
+@inproceedings{10.1145/263699.263719,
+author = {Lim, Amy W. and Lam, Monica S.},
+title = {Maximizing Parallelism and Minimizing Synchronization with Affine Transforms},
+year = {1997},
+isbn = {0897918533},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/263699.263719},
+doi = {10.1145/263699.263719},
+abstract = {This paper presents the first algorithm to find the optimal affine transform that
+maximizes the degree of parallelism while minimizing the degree of synchronization
+in a program with arbitrary loop nestings and affine data accesses. The problem is
+formulated without the use of imprecise data dependence abstractions such as data
+dependence vectors. The algorithm presented subsumes previously proposed program transformation
+algorithms that are based on unimodular transformations, loop fusion, fission, scaling,
+reindexing and/or statement reordering.},
+booktitle = {Proceedings of the 24th ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+pages = {201–214},
+numpages = {14},
+location = {Paris, France},
+series = {POPL '97}
+}
+
+@ARTICLE{97902,
+author={Wolf, M.E. and Lam, M.S.},
+journal={IEEE Transactions on Parallel and Distributed Systems},
+title={A loop transformation theory and an algorithm to maximize parallelism}, 
+year={1991},
+volume={2},
+number={4},
+pages={452-471},
+doi={10.1109/71.97902}
+}
+
+@article{article12345,
+author = {Soundararajan, Prema and Nasre, Rupesh and Jehadeesan, R. and Panigrahi, B.K.},
+year = {2019},
+month = {02},
+pages = {e5168},
+title = {A study on popular auto-parallelization frameworks},
+volume = {31},
+journal = {Concurrency and Computation: Practice and Experience},
+doi = {10.1002/cpe.5168}
+}
+
+@BOOK{6813266,
+author = {Midkiff, Samuel},
+title = {Automatic Parallelization: An Overview of Fundamental Compiler Techniques},
+year = {2012}
+}
+
+@inproceedings{mcole-thesis,
+author = {Murray Cole},
+title = {Algorithmic Skeletons: Structured Management of Parallel Computation. Research
+Monographs in Parallel and Distributed Computing.},
+year = {1991},
+publisher = {MIT Press, Cambridge},
+}
+
+@inbook{skeletons-vs-patterns,
+author = {Chis, Adriana and Gonzalez-Velez, Horacio},
+year = {2018},
+month = {02},
+pages = {45-56},
+title = {Design Patterns and Algorithmic Skeletons: A Brief Concordance},
+isbn = {978-3-319-73766-9},
+doi = {10.1007/978-3-319-73767-6_3}
+}
+
+@inproceedings{skeletons-overview,
+authors = {Marco Danelutto, Gabriele Mencagli, Massimo Torquati, Horacio González–Vélez, Peter Kilpatrick},
+title = {Algorithmic Skeletons and Parallel Design Patterns in Mainstream Parallel Programming},
+year = {2021},
+publisher = {International Journal of Parallel Programming},
+url = {https://doi.org/10.1007/s10766-020-00684-w},
+doi = {10.1007/s10766-020-00684-w},
+}
+
+@inproceedings{10.1145/1465482.1465560,
+author = {Amdahl, Gene M.},
+title = {Validity of the Single Processor Approach to Achieving Large Scale Computing Capabilities},
+year = {1967},
+isbn = {9781450378956},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1465482.1465560},
+doi = {10.1145/1465482.1465560},
+abstract = {For over a decade prophets have voiced the contention that the organization of a single computer has reached its limits and that truly significant advances can be made only by interconnection of a multiplicity of computers in such a manner as to permit cooperative solution. Variously the proper direction has been pointed out as general purpose computers with a generalized interconnection of memories, or as specialized computers with geometrically related memory interconnections and controlled by one or more instruction streams.},
+booktitle = {Proceedings of the April 18-20, 1967, Spring Joint Computer Conference},
+pages = {483–485},
+numpages = {3},
+location = {Atlantic City, New Jersey},
+series = {AFIPS '67 (Spring)}
+}
+
+@ARTICLE{welcome-to-the-jungle,
+author = {Herb Sutter},
+title = {Welcome to the Jungle! Or, A Heterogeneous Supercomputer in Every Pocket},
+year = {2012},
+url = {https://herbsutter.com/welcome-to-the-jungle/}
+}
+
+@ARTICLE{polaris,
+title = {Polaris: Automatic Parallelization of Conventional Fortran Programs.},
+url = {http://polaris.cs.uiuc.edu/polaris/polaris-old.html}
+}
+
+@ARTICLE{perf-tool,
+title = {perf: Linux profiling with performance counters.},
+url = {https://perf.wiki.kernel.org/index.php/Main_Page}
+}
+
+@ARTICLE{cpu-heterogenuity,
+author = {Christopher Mims},
+title = {MIT Technology Review. Why CPUs Aren’t Getting Any Faster. Making computers faster means relying on the central processing unit (CPU) less than ever before.},
+year = {2010},
+url = {https://www.technologyreview.com/2010/10/12/199966/why-cpus-arent-getting-any-faster/}
+}
+
+@article{HELFENSTEIN20123584,
+title = {Parallel preconditioned conjugate gradient algorithm on GPU},
+journal = {Journal of Computational and Applied Mathematics},
+volume = {236},
+number = {15},
+pages = {3584-3590},
+year = {2012},
+note = {Proceedings of the Fifteenth International Congress on Computational and Applied Mathematics (ICCAM-2010), Leuven, Belgium, 5-9 July, 2010},
+issn = {0377-0427},
+doi = {https://doi.org/10.1016/j.cam.2011.04.025},
+url = {https://www.sciencedirect.com/science/article/pii/S0377042711002196},
+author = {Rudi Helfenstein and Jonas Koko},
+keywords = {Preconditioned conjugate gradient, Parallel computing, Graphics processor unit},
+abstract = {We propose a parallel implementation of the Preconditioned Conjugate Gradient algorithm on a GPU platform. The preconditioning matrix is an approximate inverse derived from the SSOR preconditioner. Used through sparse matrix–vector multiplication, the proposed preconditioner is well suited for the massively parallel GPU architecture. As compared to CPU implementation of the conjugate gradient algorithm, our GPU preconditioned conjugate gradient implementation is up to 10 times faster (8 times faster at worst).}
+}
+
+@article{SHANG20091369,
+title = {A distributed memory parallel Gauss–Seidel algorithm for linear algebraic systems},
+journal = {Computers & Mathematics with Applications},
+volume = {57},
+number = {8},
+pages = {1369-1376},
+year = {2009},
+issn = {0898-1221},
+doi = {https://doi.org/10.1016/j.camwa.2009.01.034},
+url = {https://www.sciencedirect.com/science/article/pii/S089812210900042X},
+author = {Yueqiang Shang},
+keywords = {Parallel computing, Linear algebraic system, Gauss–Seidel method, Distributed memory system, Parallel algorithm},
+abstract = {A distributed memory parallel Gauss–Seidel algorithm for linear algebraic systems is presented, in which a parameter is introduced to adapt the algorithm to different distributed memory parallel architectures. In this algorithm, the coefficient matrix and the right-hand side of the linear algebraic system are first divided into row-blocks in the natural rowwise-order according to the performance of the parallel architecture in use. And then these row-blocks are distributed among local memories of all processors through torus-wrap mapping techniques. The solution iteration vector is cyclically conveyed among processors at each iteration so as to decrease the communication. The algorithm is a true Gauss–Seidel algorithm which maintains the convergence rate of the serial Gauss–Seidel algorithm and allows existing sequential codes to run in a parallel environment with a little investment in recoding. Numerical results are also given which show that the algorithm is of relatively high efficiency.}
+}
+
+@article{SHARMA201331,
+title = {A fast parallel Gauss Jordan algorithm for matrix inversion using CUDA},
+journal = {Computers & Structures},
+volume = {128},
+pages = {31-37},
+year = {2013},
+issn = {0045-7949},
+doi = {https://doi.org/10.1016/j.compstruc.2013.06.015},
+url = {https://www.sciencedirect.com/science/article/pii/S0045794913002095},
+author = {Girish Sharma and Abhishek Agarwala and Baidurya Bhattacharya},
+keywords = {Graphics processing unit, Compute unified development architecture, Matrix inversion, Gauss Jordan, Parallelization},
+abstract = {The ability to invert large matrices quickly and accurately determines the effectiveness of a computational tool. Current literature suggests that time complexity of matrix inversion is 2 or higher. This paper redesigns the Gauss Jordan algorithm for matrix inversion on a CUDA platform to exploit the large scale parallelization feature of a massively multithreaded GPU. The algorithm is tested for various types of matrices and the performance metrics are studied and compared with CPU based parallel methods. We show that the time complexity of matrix inversion scales as n as long as n2 threads can be supported by the GPU.}
+}
+
+@InProceedings{10.1007/978-3-642-14390-8_14,
+author="Wozniak, Marcin
+and Olas, Tomasz
+and Wyrzykowski, Roman",
+editor="Wyrzykowski, Roman
+and Dongarra, Jack
+and Karczewski, Konrad
+and Wasniewski, Jerzy",
+title="Parallel Implementation of Conjugate Gradient Method on Graphics Processors",
+booktitle="Parallel Processing and Applied Mathematics",
+year="2010",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="125--135",
+abstract="Nowadays GPUs become extremely promising multi/many-core architectures for a wide range of demanding applications. Basic features of these architectures include utilization of a large number of relatively simple processing units which operate in the SIMD fashion, as well as hardware supported, advanced multithreading. However, the utilization of GPUs in an every-day practice is still limited, mainly because of necessity of deep adaptation of implemented algorithms to a target architecture. In this work, we propose how to perform such an adaptation to achieve an efficient parallel implementation of the conjugate gradient (CG) algorithm, which is widely used for solving large sparse linear systems of equations, arising e.g. in FEM problems. Aiming at efficient implementation of the main operation of the CG algorithm, which is sparse matrix-vector multiplication (SpMV), different techniques of optimizing access to the hierarchical memory of GPUs are proposed and studied. The experimental investigation of a proposed CUDA-based implementation of the CG algorithm is carried out on two GPU architectures: GeForce 8800 and Tesla C1060. It has been shown that optimization of access to GPU memory allows us to reduce considerably the execution time of the SpMV operation, and consequently to achieve a significant speedup over CPUs when implementing the whole CG algorithm.",
+isbn="978-3-642-14390-8"
+}
+
+@article{DEVECI201833,
+title = {Multithreaded sparse matrix-matrix multiplication for many-core and GPU architectures},
+journal = {Parallel Computing},
+volume = {78},
+pages = {33-46},
+year = {2018},
+issn = {0167-8191},
+doi = {https://doi.org/10.1016/j.parco.2018.06.009},
+url = {https://www.sciencedirect.com/science/article/pii/S0167819118301923},
+author = {Mehmet Deveci and Christian Trott and Sivasankaran Rajamanickam},
+keywords = {Sparse matrix sparse matrix multiplication, KNLs, GPUs, SpGEMM},
+abstract = {Sparse matrix-matrix multiplication is a key kernel that has applications in several domains such as scientific computing and graph analysis. Several algorithms have been studied in the past for this foundational kernel. In this paper, we develop parallel algorithms for sparse matrix-matrix multiplication with a focus on performance portability across different high performance computing architectures. The performance of these algorithms depend on the data structures used in them. We compare different types of accumulators in these algorithms and demonstrate the performance difference between these data structures. Furthermore, we develop a meta-algorithm, kkSpGEMM, to choose the right algorithm and data structure based on the characteristics of the problem. We show performance comparisons on three architectures and demonstrate the need for the community to develop two phase sparse matrix-matrix multiplication implementations for efficient reuse of the data structures involved.}
+}
+
+@article{CHEN201849,
+title = {A distributed-memory hierarchical solver for general sparse linear systems},
+journal = {Parallel Computing},
+volume = {74},
+pages = {49-64},
+year = {2018},
+note = {Parallel Matrix Algorithms and Applications (PMAA'16)},
+issn = {0167-8191},
+doi = {https://doi.org/10.1016/j.parco.2017.12.004},
+url = {https://www.sciencedirect.com/science/article/pii/S0167819117302077},
+author = {Chao Chen and Hadi Pouransari and Sivasankaran Rajamanickam and Erik G. Boman and Eric Darve},
+keywords = {Parallel linear solver, Sparse matrix, Hierarchical matrix},
+abstract = {We present a parallel hierarchical solver for general sparse linear systems on distributed-memory machines. For large-scale problems, this fully algebraic algorithm is faster and more memory-efficient than sparse direct solvers because it exploits the low-rank structure of fill-in blocks. Depending on the accuracy of low-rank approximations, the hierarchical solver can be used either as a direct solver or as a preconditioner. The parallel algorithm is based on data decomposition and requires only local communication for updating boundary data on every processor. Moreover, the computation-to-communication ratio of the parallel algorithm is approximately the volume-to-surface-area ratio of the subdomain owned by every processor. We present various numerical results to demonstrate the versatility and scalability of the parallel algorithm.}
+}
+
+@inproceedings{10.5555/645671.665383,
+author = {Hall, Mary W. and Mellor-Crummey, John M. and Carle, Alan and Rodriguez, Rene G.},
+title = {FIAT: A Framework for Interprocedural Analysis and Transfomation},
+year = {1993},
+isbn = {3540576592},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+booktitle = {Proceedings of the 6th International Workshop on Languages and Compilers for Parallel Computing},
+pages = {522–545},
+numpages = {24}
+}
+
+@inproceedings{10.1145/158511.158515,
+author = {Maydan, Dror E. and Amarasinghe, Saman P. and Lam, Monica S.},
+title = {Array-Data Flow Analysis and Its Use in Array Privatization},
+year = {1993},
+isbn = {0897915607},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/158511.158515},
+doi = {10.1145/158511.158515},
+booktitle = {Proceedings of the 20th ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+pages = {2–15},
+numpages = {14},
+location = {Charleston, South Carolina, USA},
+series = {POPL '93}
+}
+
+@inproceedings{10.1145/2633448.2633453,
+author = {Bozo, Istvan and Fordos, Viktoria and Horvath, Zoltan and Toth, Melinda and Horpacsi, Daniel and Kozsik, Tamas and Koszegi, Judit and Barwell, Adam and Brown, Christopher and Hammond, Kevin},
+title = {Discovering Parallel Pattern Candidates in Erlang},
+year = {2014},
+isbn = {9781450330381},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2633448.2633453},
+doi = {10.1145/2633448.2633453},
+booktitle = {Proceedings of the Thirteenth ACM SIGPLAN Workshop on Erlang},
+pages = {13–23},
+numpages = {11},
+keywords = {patterns, refactoring, skeletons, paraphrase, concurrency, erlang, parallelism},
+location = {Gothenburg, Sweden},
+series = {Erlang '14}
+}
+
+@article{10.1145/1150019.1136506,
+author = {Ceze, Luis and Tuck, James and Torrellas, Josep and Cascaval, Calin},
+title = {Bulk Disambiguation of Speculative Threads in Multiprocessors},
+year = {2006},
+issue_date = {May 2006},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {34},
+number = {2},
+issn = {0163-5964},
+url = {https://doi.org/10.1145/1150019.1136506},
+doi = {10.1145/1150019.1136506},
+journal = {SIGARCH Comput. Archit. News},
+month = may,
+pages = {227–238},
+numpages = {12}
+}
+
+@inproceedings{10.1109/ISCA.2006.13,
+author = {Ceze, Luis and Tuck, James and Torrellas, Josep and Cascaval, Calin},
+title = {Bulk Disambiguation of Speculative Threads in Multiprocessors},
+year = {2006},
+isbn = {076952608X},
+publisher = {IEEE Computer Society},
+address = {USA},
+url = {https://doi.org/10.1109/ISCA.2006.13},
+doi = {10.1109/ISCA.2006.13},
+booktitle = {Proceedings of the 33rd Annual International Symposium on Computer Architecture},
+pages = {227–238},
+numpages = {12},
+series = {ISCA '06}
+}
+
+@ARTICLE{546613,
+  author={Hall, M.W. and Anderson, J.M. and Amarasinghe, S.P. and Murphy, B.R. and Shih-Wei Liao and Bugnion, E. and Lam, M.S},
+  journal={Computer}, 
+  title={Maximizing multiprocessor performance with the SUIF compiler}, 
+  year={1996},
+  volume={29},
+  number={12},
+  pages={84-89},
+  doi={10.1109/2.546613}
+}
+
+@article{10.1109/M-PDT.1994.329796,
+author = {Blume, William and Eigenmann, Rudolf and Hoeflinger, Jay and Padua, David and Petersen, Paul and Rauchwerger, Lawrence and Tu, Peng},
+title = {Automatic Detection of Parallelism: A Grand Challenge for High-Performance Computing},
+year = {1994},
+issue_date = {September 1994},
+publisher = {IEEE Computer Society Press},
+address = {Washington, DC, USA},
+volume = {2},
+number = {3},
+issn = {1063-6552},
+url = {https://doi.org/10.1109/M-PDT.1994.329796},
+doi = {10.1109/M-PDT.1994.329796},
+journal = {IEEE Parallel Distrib. Technol.},
+month = sep,
+pages = {37–47},
+numpages = {11}
+}
+
+@misc{suif_compiler,
+ author = {Stanford University, Computer Systems Laboratory},
+ title = {SUIF: An Infrastructure for Research on Parallelizing and Optimizing Compilers},
+ url = {https://suif.stanford.edu/suif/suif1/suif-overview/suif.html},
+}
+
+@techreport{10.5555/891422,
+author = {Wilson, Robert and French, Robert and Wilson, Christopher and Amarasinghe, Saman and Anderson, Jennifer and Tjiang, Steve and Liao, Shih and Tseng, Chau and Hall, Mary and Lam, Monica and Hennessy, John},
+title = {The SUIF Compiler System: A Parallelizing and Optimizing Research Compiler},
+year = {1994},
+publisher = {Stanford University},
+address = {Stanford, CA, USA},
+}
+
+@article{10.1016/j.parco.2010.05.006,
+author = {Rul, Sean and Vandierendonck, Hans and De Bosschere, Koen},
+title = {A Profile-Based Tool for Finding Pipeline Parallelism in Sequential Programs},
+year = {2010},
+issue_date = {September, 2010},
+publisher = {Elsevier Science Publishers B. V.},
+address = {NLD},
+volume = {36},
+number = {9},
+issn = {0167-8191},
+url = {https://doi.org/10.1016/j.parco.2010.05.006},
+doi = {10.1016/j.parco.2010.05.006},
+journal = {Parallel Comput.},
+month = sep,
+pages = {531–551},
+numpages = {21},
+keywords = {Profile-based parallelization, Coarse-grain parallelism, Pipeline parallelism, Auto-parallelization, Feedback directed analysis}
+}
+
+@article{skeletons-static,
+author = {del Rio Astorga, David and Dolz, Manuel F and Sanchez, Luis Miguel and Garcia, J Daniel and Danelutto, Marco and Torquati, Massimo},
+title = {Finding Parallel Patterns through Static Analysis in C++ Applications},
+year = {2018},
+issue_date = {11 2018},
+publisher = {Sage Publications, Inc.},
+address = {USA},
+volume = {32},
+number = {6},
+issn = {1094-3420},
+url = {https://doi.org/10.1177/1094342017695639},
+doi = {10.1177/1094342017695639},
+journal = {Int. J. High Perform. Comput. Appl.},
+month = nov,
+pages = {779–788},
+numpages = {10},
+keywords = {Parallel patterns, C++11 attributes, source code analysis tools}
+}
+
+@inproceedings{roberto-lozano-skeletons,
+author = {Lozano, Roberto Castaneda and Cole, Murray and Franke, Bjorn},
+title = {Modernizing Parallel Code with Pattern Analysis},
+year = {2021},
+isbn = {9781450382946},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3437801.3441603},
+doi = {10.1145/3437801.3441603},
+booktitle = {Proceedings of the 26th ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+pages = {418–430},
+numpages = {13},
+keywords = {parallel patterns, dynamic analysis, code modernization, pattern matching},
+location = {Virtual Event, Republic of Korea},
+series = {PPoPP '21}
+}
+
+@book{gang-of-four,
+author = {Gamma, Erich and Helm, Richard and Johnson, Ralph and Vlissides, John},
+title = {Design Patterns: Elements of Reusable Object-Oriented Software},
+year = {1995},
+isbn = {0201633612},
+publisher = {Addison-Wesley Longman Publishing Co., Inc.},
+address = {USA}
+}
+
+@book{mccool-patterns,
+author = {McCool, Michael and Reinders, James and Robison, Arch},
+title = {Structured Parallel Programming: Patterns for Efficient Computation},
+year = {2012},
+isbn = {9780123914439},
+publisher = {Morgan Kaufmann Publishers Inc.},
+address = {San Francisco, CA, USA},
+edition = {1st},
+}
+
+@inproceedings{assistant-aiseps,
+author = {Maramzin, Aleksandr and Vasiladiotis, Christos and Lozano, Roberto Casta\~{n}eda and Cole, Murray and Franke, Bj\"{o}rn},
+title = {“It Looks like You’Re Writing a Parallel Loop”: A Machine Learning Based Parallelization Assistant},
+year = {2019},
+isbn = {9781450369831},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3358500.3361567},
+doi = {10.1145/3358500.3361567},
+abstract = {Despite decades of research into parallelizing compiler technology, software parallelization remains a largely manual task where the key resource is expert time. In this paper we focus on the time-consuming task of identifying those loops in a program, which are both worthwhile and feasible to parallelize. We present a methodology and tool which make better use of expert time by guiding their effort directly towards those loops, where the largest performance gains can be expected while keeping analysis and transformation effort at a minimum. We have developed a novel parallelization assistant that provides programmers with a ranking of all loops in a program based on their overall merit. For each loop this metric combines its potential contribution to speedup and an estimated probability for its successful parallelization. This probability is predicted using a machine learning model, which has been trained, validated, and tested on 1415 labelled loops, achieving a prediction accuracy greater than 90\%. We have evaluated our parallelization assistant against sequential C applications from the SNU NAS benchmark suite. We show that our novel methodology achieves parallel performance levels comparable to those from expert programmers while requiring less expert time. On average, our assistant reduces the number of lines of code that have to be inspected manually before reaching expert-level parallel speedup by 20\%.},
+booktitle = {Proceedings of the 6th ACM SIGPLAN International Workshop on AI-Inspired and Empirical Methods for Software Engineering on Parallel Computing Systems},
+pages = {1–10},
+numpages = {10},
+keywords = {assistant tool, Compilers, machine learning, loop parallelization},
+location = {Athens, Greece},
+series = {AI-SEPS 2019}
+}
+
+@software{frameworks-repo,
+ author = {Aleksandr Maramzin},
+ title = {Computational Frameworks},
+ url = {https://github.com/av-maramzin/Abstract-DT},
+ year = {2020},
+ organization = {The University of Edinburgh},
+}
+
+@book{Kennedy:2001:OCM:502981,
+ author = {Kennedy, Ken and Allen, John R.},
+ title = {Optimizing Compilers for Modern Architectures: A Dependence-based Approach},
+ year = {2002},
+ isbn = {1-55860-286-0},
+ publisher = {Morgan Kaufmann Publishers Inc.},
+ address = {San Francisco, CA, USA},
+}
+
+@ARTICLE{atre_ea:2018:ccpe,
+    author = {Atre, Rohit and Huda, Zia Ul and Wolf, Felix and Jannesari, Ali},
+     month = mar,
+     title = {Dissecting Sequential Programs for Parallelization - An Approach Based on Computational Units},
+   journal = {Concurrency and Computation: Practice and Experience},
+    volume = {31},
+    number = {5},
+      year = {2019},
+     pages = {1-12},
+       doi = {10.1002/cpe.4770}
+}
+
+@INPROCEEDINGS{roth_ea:vpa:2018,
+     author = {Roth, Philip C. and Huck, Kevin and Gopalakrishnan, Ganesh and Wolf, Felix},
+      month = nov,
+      title = {Using Deep Learning for Automated Communication Pattern Characterization: Little Steps and Big Challenges},
+  booktitle = {Proc. of the 5th Workshop on Visual Performance Analysis (VPA), held in conjunction with the Supercomputing Conference (SC18), Dallas, TX, USA},
+       year = {2018},
+       note = {(to appear)}
+}
+
+@INPROCEEDINGS{Atre:2017:spaa,
+     author = {Atre, Rohit and Jannesari, Ali and Wolf, Felix},
+      month = jul,
+      title = {Meeting the challenges of parallelizing sequential programs},
+  booktitle = {Proc. of the 29th ACM Symposium on Parallelism in Algorithms and Architectures (SPAA), Washington, DC, USA},
+       year = {2017},
+      pages = {363--365},
+  publisher = acm,
+       isbn = {978-1-4503-4593-4},
+        doi = {10.1145/3087556.3087592}
+}
+
+@ARTICLE{Li:2016:discopop,
+    author = {Li, Zhen and Atre, Rohit and Huda, Zia Ul and Jannesari, Ali and Wolf, Felix},
+     month = jul,
+     title = {Unveiling Parallelization Opportunities in Sequential Programs},
+   journal = {Journal of Systems and Software},
+    volume = {117},
+      year = {2016},
+     pages = {282–295},
+       doi = {10.1016/j.jss.2016.03.045}
+}
+
+@INPROCEEDINGS{Huda:2016:parallel_patterns,
+     author = {Huda, Zia Ul and Atre, Rohit and Jannesari, Ali and Wolf, Felix},
+      month = may,
+      title = {Automatic Parallel Pattern Detection in the Algorithm Structure Design Space},
+  booktitle = {Proc. of the 30th IEEE International Parallel and Distributed Processing Symposium (IPDPS), Chicago, USA},
+       year = {2016},
+      pages = {43-52},
+  publisher = ieee,
+        url = {http://dx.doi.org/10.1109/IPDPS.2016.60},
+        doi = {10.1109/IPDPS.2016.60}
+}
+
+@INCOLLECTION{Li_ea:2015:DiscoPoP_Tools_HPC,
+     author = {Li, Zhen and Atre, Rohit and Ul-Huda, Zia and Jannesari, Ali and Wolf, Felix},
+      title = {DiscoPoP: A Profiling Tool to Identify Parallelization Opportunities},
+  booktitle = {Tools for High Performance Computing 2014, Proc. of the 8th Parallel Tools Workshop,Stuttgart, Germany, October 2014},
+    chapter = {3},
+       year = {2015},
+      pages = {37-54},
+  publisher = springer,
+       isbn = {978-3-319-16011-5},
+        url = {http://www.springer.com/us/book/9783319160115},
+        doi = {10.1007/978-3-319-16012-2}
+}
+
+@INPROCEEDINGS{Li_ea:2015:task_parallelism,
+     author = {Li, Zhen and Zhao, Bo and Jannesari, Ali and Wolf, Felix},
+      month = nov,
+      title = {Beyond Data Parallelism: Identifying Parallel Tasks in Sequential Programs},
+  booktitle = {Proc. of 15th International Conference on Algorithms and Architectures for Parallel Processing (ICA3PP), Zhangjiajie, China},
+     series = {Lecture Notes in Computer Science},
+     volume = {9531},
+       year = {2015},
+      pages = {569-582},
+  publisher = springer,
+       isbn = {978-3-319-27139-2},
+        doi = {10.1007/978-3-319-27140-8_39}
+}
+
+@INPROCEEDINGS{fried_ea:2013:icmla,
+     author = {Fried, Daniel and Li, Zhen and Jannesari, Ali and Wolf, Felix},
+      month = dec,
+      title = {Predicting Parallelization of Sequential Programs Using Supervised Learning},
+  booktitle = {Proc. of the 12th IEEE International Conference on Machine Learning and Applications (ICMLA), Miami, FL, USA},
+       year = {2013},
+      pages = {72-77},
+  publisher = ieee,
+  address   = {Miami, FL, USA},
+        url = {http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=6786084},
+        doi = {10.1109/ICMLA.2013.108}
+}
+
+@article{Wilson:1994:SIR:193209.193217,
+ author = {Wilson, Robert P. and French, Robert S. and Wilson, Christopher S. and Amarasinghe, Saman P. and Anderson, Jennifer M. and Tjiang, Steve W. K. and Liao, Shih-Wei and Tseng, Chau-Wen and Hall, Mary W. and Lam, Monica S. and Hennessy, John L.},
+ title = {SUIF: An Infrastructure for Research on Parallelizing and Optimizing Compilers},
+ journal = {SIGPLAN Not.},
+ issue_date = {Dec. 1994},
+ volume = {29},
+ number = {12},
+ month = dec,
+ year = {1994},
+ issn = {0362-1340},
+ pages = {31--37},
+ numpages = {7},
+ url = {http://doi.acm.org/10.1145/193209.193217},
+ doi = {10.1145/193209.193217},
+ acmid = {193217},
+ publisher = acm,
+ address = acm-address,
+} 
+
+@inproceedings{Tournavitis:2009:THA:1542476.1542496,
+ author = {Tournavitis, Georgios and Wang, Zheng and Franke, Bj\"{o}rn and O'Boyle, Michael F.P.},
+ title = {Towards a Holistic Approach to Auto-parallelization: Integrating Profile-driven Parallelism Detection and Machine-learning Based Mapping},
+ booktitle = {Proceedings of the 30th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+ series = {PLDI '09},
+ year = {2009},
+ isbn = {978-1-60558-392-1},
+ location = {Dublin, Ireland},
+ pages = {177--187},
+ numpages = {11},
+ url = {http://doi.acm.org/10.1145/1542476.1542496},
+ doi = {10.1145/1542476.1542496},
+ acmid = {1542496},
+ publisher = acm,
+ address = acm-address,
+ keywords = {auto-parallelization, machine-learning based parallelism mapping, openmp, profile-driven parallelism detection},
+}
+
+@inproceedings{Manilov:2018:GPI:3178372.3179511,
+ author = {Manilov, Stanislav and Vasiladiotis, Christos and Franke, Bj\"{o}rn},
+ title = {Generalized Profile-guided Iterator Recognition},
+ booktitle = {Proceedings of the 27th International Conference on Compiler Construction},
+ series = {CC 2018},
+ year = {2018},
+ isbn = {978-1-4503-5644-2},
+ location = {Vienna, Austria},
+ pages = {185--195},
+ numpages = {11},
+ url = {http://doi.acm.org/10.1145/3178372.3179511},
+ doi = {10.1145/3178372.3179511},
+ acmid = {3179511},
+ publisher = acm,
+ address = acm-address,
+ keywords = {Loop iterators, loop analysis},
+}
+
+@article{Ferrante:1987:PDG:24039.24041,
+ author = {Ferrante, Jeanne and Ottenstein, Karl J. and Warren, Joe D.},
+ title = {The Program Dependence Graph and Its Use in Optimization},
+ journal = {ACM Trans. Program. Lang. Syst.},
+ issue_date = {July 1987},
+ volume = {9},
+ number = {3},
+ month = jul,
+ year = {1987},
+ issn = {0164-0925},
+ pages = {319--349},
+ numpages = {31},
+ url = {http://doi.acm.org/10.1145/24039.24041},
+ doi = {10.1145/24039.24041},
+ acmid = {24041},
+ publisher = acm,
+ address = acm-address,
+}
+
+@misc{snu-npb-benchmarks,
+ author = {Seoul National University},
+ title = {SNU NAS Parallel Benchmarks},
+ month = aug,
+ year = {2012},
+ url = {http://aces.snu.ac.kr/software/snu-npb/},
+}
+
+@misc{nasa-parallel-benchmarks,
+ author = {NASA Advanced Supercomputing (NAS) Division},
+ title = {NAS Parallel Benchmarks},
+ month = aug,
+ year = {2012},
+ url = {https://www.nas.nasa.gov/publications/npb.html},
+}
+
+@software{assistant-repo,
+ author = {Aleksandr Maramzin},
+ title = {Machine Learning Based Parallelization Assistant},
+ url = {https://github.com/av-maramzin/PParMetrics},
+ year = {2019},
+ organization = {The University of Edinburgh},
+}
+
+@article{scikit-learn,
+ title={Scikit-learn: Machine Learning in {P}ython},
+ author={Pedregosa, F. and Varoquaux, G. and Gramfort, A. and Michel, V.
+         and Thirion, B. and Grisel, O. and Blondel, M. and Prettenhofer, P.
+         and Weiss, R. and Dubourg, V. and Vanderplas, J. and Passos, A. and
+         Cournapeau, D. and Brucher, M. and Perrot, M. and Duchesnay, E.},
+ journal={Journal of Machine Learning Research},
+ volume={12},
+ pages={2825--2830},
+ year={2011}
+}
+
+@article{McCabe:1976:CM:1313324.1313586,
+ author = {McCabe, T. J.},
+ title = {A Complexity Measure},
+ journal = {IEEE Trans. Softw. Eng.},
+ issue_date = {July 1976},
+ volume = {2},
+ number = {4},
+ month = jul,
+ year = {1976},
+ issn = {0098-5589},
+ pages = {308--320},
+ numpages = {13},
+ url = {https://doi.org/10.1109/TSE.1976.233837},
+ doi = {10.1109/TSE.1976.233837},
+ acmid = {1313586},
+ publisher = {IEEE Press},
+ address = {Piscataway, NJ, USA},
+ keywords = {Basis, complexity measure, control flow, decomposition, graph theory, independence, linear, modularization, programming, reduction, software, testing, testing, Basis, complexity measure, control flow, decomposition, graph theory, independence, linear, modularization, programming, reduction, software},
+} 
+
+@misc{icc-opt-report-parser,
+ author = {Aleksandr Maramzin, Christos Vasiladiotis, Murray Cole, Bj\"orn Franke},
+ title = {Intel C/C++ Compiler optimization report parser},
+ month = nov,
+ year = {2018},
+ url = {https://github.com/av-maramzin/icc-opt-report-compiler},
+}
+
+@misc{icc-compiler,
+ author = {Intel Corporation},
+ title = {Intel C/C++ Compiler (ICC)},
+ year = {1985-2018},
+ url = {https://software.intel.com/en-us/c-compilers},
+}
+
+@misc{llnl_computing,
+ author = {Lawrence Livermore National Laboratory},
+ title = {Parallel Computing Tutorials},
+ url = {https://computing.llnl.gov/},
+}
+
+@inproceedings{Lattner:2004:LCF:977395.977673,
+ author = {Lattner, Chris and Adve, Vikram},
+ title = {LLVM: A Compilation Framework for Lifelong Program Analysis \& Transformation},
+ booktitle = {Proceedings of the International Symposium on Code Generation and Optimization: Feedback-directed and Runtime Optimization},
+ series = {CGO '04},
+ year = {2004},
+ isbn = {0-7695-2102-9},
+ location = {Palo Alto, California},
+ pages = {75--},
+ url = {http://dl.acm.org/citation.cfm?id=977395.977673},
+ acmid = {977673},
+ publisher = ieee,
+ address = {Washington, DC, USA},
+}
+
+@misc{llvm-compiler-infrastructure,
+ author = {LLVM Developer Group},
+ title = {The LLVM Compiler Infrastructure},
+ year = {2002-2019},
+ url = {https://llvm.org/},
+}
+
+@misc{github-icc-parser,
+ author = {Aleksandr Maramzin},
+ title = {Pervasive Parallelism Tool},
+ year = {2018-2019},
+ url = {https://github.com/av-maramzin/icc-opt-report-compiler},
+}
+
+@article{Bacon:1994:CTH:197405.197406,
+ author = {Bacon, David F. and Graham, Susan L. and Sharp, Oliver J.},
+ title = {Compiler Transformations for High-performance Computing},
+ journal = {ACM Comput. Surv.},
+ issue_date = {Dec. 1994},
+ volume = {26},
+ number = {4},
+ month = dec,
+ year = {1994},
+ issn = {0360-0300},
+ pages = {345--420},
+ numpages = {76},
+ url = {http://doi.acm.org/10.1145/197405.197406},
+ doi = {10.1145/197405.197406},
+ acmid = {197406},
+ publisher = acm,
+ address = acm-address,
+ keywords = {compilation, dependence analysis, locality, multiprocessors, optimization, parallelism, superscalar processors, vectorization},
+}
+
+@inproceedings{Niculescu-Mizil:2005:PGP:1102351.1102430,
+ author = {Niculescu-Mizil, Alexandru and Caruana, Rich},
+ title = {Predicting Good Probabilities with Supervised Learning},
+ booktitle = {Proceedings of the 22nd International Conference on Machine Learning},
+ series = {ICML '05},
+ year = {2005},
+ isbn = {1-59593-180-5},
+ location = {Bonn, Germany},
+ pages = {625--632},
+ numpages = {8},
+ url = {http://doi.acm.org/10.1145/1102351.1102430},
+ doi = {10.1145/1102351.1102430},
+ acmid = {1102430},
+ publisher = acm,
+ address = acm-address,
+}
+
+@book{James:2013:ISL:2517747,
+  author = {James, Gareth and Witten, Daniela and Hastie, Trevor and Tibshirani, Robert},
+  isbn = {978-1-4614-7138-7},
+  keywords = {machine-learning r-language statistics textbook},
+  publisher = springer,
+  title = {An introduction to statistical learning : with applications in {R}},
+  doi = {10.1007/978-1-4614-7138-7},
+  year = 2013,
+  address = springer-address,
+}
+
+@BOOK{6813266, 
+author={S. {Midkiff}}, 
+booktitle={Automatic Parallelization: An Overview of Fundamental Compiler Techniques}, 
+title={Automatic Parallelization: An Overview of Fundamental Compiler Techniques}, 
+year={2012}, 
+volume={}, 
+number={}, 
+pages={}, 
+keywords={compilers;automatic parallelization;data dependence analysis;data flow analysis;intermediate representations;transformations;optimization;shared memory;distributed memory}, 
+doi={}, 
+ISSN={}, 
+publisher={Morgan \& Claypool}, 
+address={San Rafael, CA, USA},
+isbn={9781608458424}, 
+url={https://ieeexplore.ieee.org/document/6813266}
+}
+
+@inproceedings{Larsen:2012:PML:2410141.2410600,
+ author = {Larsen, Per and Ladelsky, Razya and Lidman, Jacob and McKee, Sally A. and Karlsson, Sven and Zaks, Ayal},
+ title = {Parallelizing More Loops with Compiler Guided Refactoring},
+ booktitle = {Proceedings of the 2012 41st International Conference on Parallel Processing},
+ series = {ICPP '12},
+ year = {2012},
+ isbn = {978-0-7695-4796-1},
+ pages = {410--419},
+ numpages = {10},
+ url = {http://dx.doi.org/10.1109/ICPP.2012.48},
+ doi = {10.1109/ICPP.2012.48},
+ acmid = {2410600},
+ publisher = ieee,
+ address = {Washington, DC, USA},
+ keywords = {Automatic Loop Parallelization, Compiler Feedback, Refactoring},
+} 
+
+@article{Jensen:2017:ILD:3132652.3095754,
+ author = {Jensen, Nicklas Bo and Karlsson, Sven},
+ title = {Improving Loop Dependence Analysis},
+ journal = {ACM Trans. Archit. Code Optim.},
+ issue_date = {September 2017},
+ volume = {14},
+ number = {3},
+ month = aug,
+ year = {2017},
+ issn = {1544-3566},
+ pages = {22:1--22:24},
+ articleno = {22},
+ numpages = {24},
+ url = {http://doi.acm.org/10.1145/3095754},
+ doi = {10.1145/3095754},
+ acmid = {3095754},
+ publisher = acm,
+ address = acm-address,
+ keywords = {OpenMP, SIMD, automatic vectorization},
+}
+
+@inproceedings{Seo:2011:PCN:2357490.2358063,
+ author = {Seo, Sangmin and Jo, Gangwon and Lee, Jaejin},
+ title = {Performance Characterization of the {NAS} Parallel Benchmarks in {OpenCL}},
+ booktitle = {Proceedings of the 2011 IEEE International Symposium on Workload Characterization},
+ series = {IISWC '11},
+ year = {2011},
+ isbn = {978-1-4577-2063-5},
+ pages = {137--148},
+ numpages = {12},
+ url = {http://dx.doi.org/10.1109/IISWC.2011.6114174},
+ doi = {10.1109/IISWC.2011.6114174},
+ acmid = {2358063},
+ publisher = ieee,
+ address = {Washington, DC, USA},
+} 
+
+@article{Dagum:1998:OIA:615255.615542,
+ author = {Dagum, Leonardo and Menon, Ramesh},
+ title = {OpenMP: An Industry-Standard API for Shared-Memory Programming},
+ journal = {IEEE Comput. Sci. Eng.},
+ issue_date = {January 1998},
+ volume = {5},
+ number = {1},
+ month = jan,
+ year = {1998},
+ issn = {1070-9924},
+ pages = {46--55},
+ numpages = {10},
+ url = {https://doi.org/10.1109/99.660313},
+ doi = {10.1109/99.660313},
+ acmid = {615542},
+ publisher = ieee,
+ address = {Los Alamitos, CA, USA},
+} 
+
+@INPROCEEDINGS{4907653, 
+author={H. {Leather} and E. {Bonilla} and M. {O'Boyle}}, 
+booktitle={2009 International Symposium on Code Generation and Optimization}, 
+title={Automatic Feature Generation for Machine Learning Based Optimizing Compilation}, 
+year={2009}, 
+volume={}, 
+number={}, 
+pages={81-91}, 
+keywords={genetic algorithms;grammars;learning (artificial intelligence);program compilers;automatic feature generation;machine learning;compilation;compiler writer;grammar;genetic programming;predictive modeling;loop unrolling;Pentium 6;feature generation technique;Machine learning;Optimizing compilers;Machine learning algorithms;Humans;Program processors;Informatics;Learning systems;Genetic programming;Predictive models;Tree data structures}, 
+doi={10.1109/CGO.2009.21}, 
+ISSN={}, 
+month=mar,
+publisher=ieee,
+address=ieee-address,
+}
+
+@INPROCEEDINGS{1402082, 
+author={M. {Stephenson} and S. {Amarasinghe}}, 
+booktitle={International Symposium on Code Generation and Optimization}, 
+title={Predicting unroll factors using supervised classification}, 
+year={2005}, 
+volume={}, 
+number={}, 
+pages={123-134}, 
+keywords={program control structures;optimising compilers;learning (artificial intelligence);parallelising compilers;heuristic programming;program compilers;machine learning;loop unrolling;branch prediction;instruction level parallelism;Open Research Compiler;supervised learning;SPEC 2000 benchmark suite;optimising compilers;heuristic programming;Pipeline processing;Machine learning;Humans;Optimizing compilers;Support vector machines;Support vector machine classification;History;Computer science;Artificial intelligence;Laboratories}, 
+doi={10.1109/CGO.2005.29}, 
+ISSN={}, 
+month=mar,
+publisher=ieee,
+address=ieee-address,
+}
+
+@InProceedings{Zhao2003ToIO,
+author="Zhao, Peng
+and Amaral, Jos{\'e} Nelson",
+editor="Rauchwerger, Lawrence",
+title="To Inline or Not to Inline? Enhanced Inlining Decisions",
+booktitle="Languages and Compilers for Parallel Computing",
+year="2004",
+publisher=springer,
+address="Berlin, Heidelberg",
+pages="405--419",
+abstract="The decision to inline aÂ procedure in the Open Research Compiler (ORC) was based on aÂ temperature heuristics that takes into consideration the time spent in aÂ procedure and the size of the procedure. In this paper we describe the trade-off that has to be worked out to make the correct inlining decisions. We introduce two new heuristics to enhance the ORC inlining heuristics: adaptation and cycle{\_}density. With adaptation we are allowed to vary the temperature threshold and prevent penalizing small benchmarks. With cycle{\_}density we prevent the inlining of procedures that have aÂ high temperature in spite of being called infrequently. Experiments show that while adaptation improves the speedup obtained with inlining across the SPEC2000 suite, cycle{\_}density reduces significantly both the code growth and compilation time increase caused by inlining. We then characterize the SPEC INT2000 benchmarks according to the inlining potential of their function calls. Our enhancement is released in the ORC 2.0.",
+isbn="978-3-540-24644-2",
+doi={10.1007/978-3-540-24644-2_26},
+}
+
+
+
+
+@INPROCEEDINGS{1559966, 
+author={J. {Cavazos} and M. F. P. {O'Boyle}}, 
+booktitle={SC '05: Proceedings of the 2005 ACM/IEEE Conference on Supercomputing}, 
+title={Automatic Tuning of Inlining Heuristics}, 
+year={2005}, 
+volume={}, 
+number={}, 
+pages={14-14}, 
+keywords={Optimizing compilers;Costs;Java;Dynamic compiler;Program processors;Computer languages;Runtime;Permission;Computer architecture;Informatics}, 
+doi={10.1109/SC.2005.14}, 
+ISSN={}, 
+month=nov,
+publisher=ieee,
+address = ieee-address,
+}
+
+@inproceedings{Almagor:2004:FEC:997163.997196,
+ author = {Almagor, L. and Cooper, Keith D. and Grosul, Alexander and Harvey, Timothy J. and Reeves, Steven W. and Subramanian, Devika and Torczon, Linda and Waterman, Todd},
+ title = {Finding Effective Compilation Sequences},
+ booktitle = {Proceedings of the 2004 ACM SIGPLAN/SIGBED Conference on Languages, Compilers, and Tools for Embedded Systems},
+ series = {LCTES '04},
+ year = {2004},
+ isbn = {1-58113-806-7},
+ location = {Washington, DC, USA},
+ pages = {231--239},
+ numpages = {9},
+ url = {http://doi.acm.org/10.1145/997163.997196},
+ doi = {10.1145/997163.997196},
+ acmid = {997196},
+ publisher = acm,
+ address = acm-address,
+ keywords = {adaptive compilers, learning models}
+} 
+
+@inproceedings{Cooper:2005:AAC:1065910.1065921,
+ author = {Cooper, Keith D. and Grosul, Alexander and Harvey, Timothy J. and Reeves, Steven and Subramanian, Devika and Torczon, Linda and Waterman, Todd},
+ title = {ACME: Adaptive Compilation Made Efficient},
+ booktitle = {Proceedings of the 2005 ACM SIGPLAN/SIGBED Conference on Languages, Compilers, and Tools for Embedded Systems},
+ series = {LCTES '05},
+ year = {2005},
+ isbn = {1-59593-018-3},
+ location = {Chicago, Illinois, USA},
+ pages = {69--77},
+ numpages = {9},
+ url = {http://doi.acm.org/10.1145/1065910.1065921},
+ doi = {10.1145/1065910.1065921},
+ acmid = {1065921},
+ publisher = acm,
+ address = acm-address,
+ keywords = {adaptive compilation},
+} 
+
+@article{Ashouri:2017:MMC:3132652.3124452,
+ author = {Ashouri, Amir H. and Bignoli, Andrea and Palermo, Gianluca and Silvano, Cristina and Kulkarni, Sameer and Cavazos, John},
+ title = {MiCOMP: Mitigating the Compiler Phase-Ordering Problem Using Optimization Sub-Sequences and Machine Learning},
+ journal = {ACM Trans. Archit. Code Optim.},
+ issue_date = {September 2017},
+ volume = {14},
+ number = {3},
+ month = sep,
+ year = {2017},
+ issn = {1544-3566},
+ pages = {29:1--29:28},
+ articleno = {29},
+ numpages = {28},
+ url = {http://doi.acm.org/10.1145/3124452},
+ doi = {10.1145/3124452},
+ acmid = {3124452},
+ publisher = acm,
+ address = acm-address,
+ keywords = {Autotuning, optimizations, phase-ordering, supervised-learning},
+}
+
+@inproceedings{Hayashi:2015:MPH:2807426.2807429,
+ author = {Hayashi, Akihiro and Ishizaki, Kazuaki and Koblents, Gita and Sarkar, Vivek},
+ title = {Machine-Learning-based Performance Heuristics for Runtime CPU/GPU Selection},
+ booktitle = {Proceedings of the Principles and Practices of Programming on The Java Platform},
+ series = {PPPJ '15},
+ year = {2015},
+ isbn = {978-1-4503-3712-0},
+ location = {Melbourne, FL, USA},
+ pages = {27--36},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/2807426.2807429},
+ doi = {10.1145/2807426.2807429},
+ acmid = {2807429},
+ publisher = acm,
+ address = acm-address,
+ keywords = {GPU, JIT Compiler, Java, Performance heuristics, Runtime, Supervised machine-learning},
+}
+
+
+@misc{snu-npb-benchmarks,
+ author = {Seoul National University},
+ title = {SNU NAS Parallel Benchmarks},
+ month = {August},
+ year = {2012},
+ url = {http://aces.snu.ac.kr/software/snu-npb/},
+}
+
+@misc{nasa-parallel-benchmarks,
+ author = {NASA Advanced Supercomputing (NAS) Division},
+ title = {NAS Parallel Benchmarks},
+ month = {August},
+ year = {2012},
+ url = {https://www.nas.nasa.gov/publications/npb.html},
+}
+
+@misc{aiseps,
+ author = {Aleksandr Maramzin{,} Christos Vasiladiotis{,} Roberto Casta\~neda Lozano and Murray Cole and Bj\"orn Franke},
+ title = {''Smart'' Software Parallelisation Assistant},
+ month = {August},
+ year = {2019},
+ url = {https://www.overleaf.com/project/5c615d375279e577dcf79cfc},
+}
+
+@inproceedings{McCabe:1976:CM:800253.807712,
+ author = {McCabe, Thomas J.},
+ title = {A Complexity Measure},
+ booktitle = {Proceedings of the 2Nd International Conference on Software Engineering},
+ series = {ICSE '76},
+ year = {1976},
+ location = {San Francisco, California, USA},
+ pages = {407--},
+ url = {http://dl.acm.org/citation.cfm?id=800253.807712},
+ acmid = {807712},
+ publisher = {IEEE Computer Society Press},
+ address = {Los Alamitos, CA, USA},
+ keywords = {Basis, Complexity measure, Control flow, Decomposition, Graph theory, Independence, Linear, Modularization, Programming, Reduction, Software, Testing},
+}
+
+@book{Halstead:1977:ESS:540137,
+ author = {Halstead, Maurice H.},
+ title = {Elements of Software Science (Operating and Programming Systems Series)},
+ year = {1977},
+ isbn = {0444002057},
+ publisher = {Elsevier Science Inc.},
+ address = {New York, NY, USA},
+}
+
+@article{Stevens:1974:SD:1661066.1661068,
+ author = {Stevens, W. P. and Myers, G. J. and Constantine, L. L.},
+ title = {Structured Design},
+ journal = {IBM Syst. J.},
+ issue_date = {June 1974},
+ volume = {13},
+ number = {2},
+ month = jun,
+ year = {1974},
+ issn = {0018-8670},
+ pages = {115--139},
+ numpages = {25},
+ url = {http://dx.doi.org/10.1147/sj.132.0115},
+ doi = {10.1147/sj.132.0115},
+ acmid = {1661068},
+ publisher = {IBM Corp.},
+ address = {Riverton, NJ, USA},
+}
+
+@inproceedings{Rupprecht:2017:DID:3155562.3155607,
+ author = {Rupprecht, Thomas and Chen, Xi and White, David H. and Boockmann, Jan H. and L\"{u}ttgen, Gerald and Bos, Herbert},
+ title = {DSIbin: Identifying Dynamic Data Structures in C/C++ Binaries},
+ booktitle = {Proceedings of the 32Nd IEEE/ACM International Conference on Automated Software Engineering},
+ series = {ASE 2017},
+ year = {2017},
+ isbn = {978-1-5386-2684-9},
+ location = {Urbana-Champaign, IL, USA},
+ pages = {331--341},
+ numpages = {11},
+ url = {http://dl.acm.org/citation.cfm?id=3155562.3155607},
+ acmid = {3155607},
+ publisher = {IEEE Press},
+ address = {Piscataway, NJ, USA},
+ keywords = {data structure identification, dynamic data structures, pointer programs, reverse engineering, type recovery},
+} 
+
+@article{Haller:2016:SDS:2938006.2938029,
+ author = {Haller, Istvan and Slowinska, Asia and Bos, Herbert},
+ title = {Scalable Data Structure Detection and Classification for C/C++ Binaries},
+ journal = {Empirical Softw. Engg.},
+ issue_date = {June      2016},
+ volume = {21},
+ number = {3},
+ month = jun,
+ year = {2016},
+ issn = {1382-3256},
+ pages = {778--810},
+ numpages = {33},
+ url = {http://dx.doi.org/10.1007/s10664-015-9363-y},
+ doi = {10.1007/s10664-015-9363-y},
+ acmid = {2938029},
+ publisher = {Kluwer Academic Publishers},
+ address = {Hingham, MA, USA},
+ keywords = {Data structures, Dynamic binary analysis},
+}
+
+@inproceedings{inria,
+author = {Abbas, Naeem and Derrien, Steven and Rajopadhye, Sanjay and Quinton, Patrice},
+year = {2010},
+month = {08},
+pages = {37-44},
+title = {Accelerating HMMER on FPGA using parallel prefixes and reductions},
+doi = {10.1109/FPT.2010.5681755}
+}
+
+@inproceedings{Ganesan:2010:AHG:1854776.1854844,
+ author = {Ganesan, Narayan and Chamberlain, Roger D. and Buhler, Jeremy and Taufer, Michela},
+ title = {Accelerating HMMER on GPUs by Implementing Hybrid Data and Task Parallelism},
+ booktitle = {Proceedings of the First ACM International Conference on Bioinformatics and Computational Biology},
+ series = {BCB '10},
+ year = {2010},
+ isbn = {978-1-4503-0438-2},
+ location = {Niagara Falls, New York},
+ pages = {418--421},
+ numpages = {4},
+ url = {http://doi.acm.org/10.1145/1854776.1854844},
+ doi = {10.1145/1854776.1854844},
+ acmid = {1854844},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+@inproceedings{Ginsbach:2018:CDS:3178372.3179515,
+ author = {Ginsbach, Philip and Crawford, Lewis and O\&\#39;Boyle, Michael F. P.},
+ title = {CAnDL: A Domain Specific Language for Compiler Analysis},
+ booktitle = {Proceedings of the 27th International Conference on Compiler Construction},
+ series = {CC 2018},
+ year = {2018},
+ isbn = {978-1-4503-5644-2},
+ location = {Vienna, Austria},
+ pages = {151--162},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/3178372.3179515},
+ doi = {10.1145/3178372.3179515},
+ acmid = {3179515},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {LLVM, constraint programming, optimization},
+} 
+
+@article{Ginsbach:2018:AML:3296957.3173182,
+ author = {Ginsbach, Philip and Remmelg, Toomas and Steuwer, Michel and Bodin, Bruno and Dubach, Christophe and O'Boyle, Michael F. P.},
+ title = {Automatic Matching of Legacy Code to Heterogeneous APIs: An Idiomatic Approach},
+ journal = {SIGPLAN Not.},
+ issue_date = {February 2018},
+ volume = {53},
+ number = {2},
+ month = mar,
+ year = {2018},
+ issn = {0362-1340},
+ pages = {139--153},
+ numpages = {15},
+ url = {http://doi.acm.org/10.1145/3296957.3173182},
+ doi = {10.1145/3296957.3173182},
+ acmid = {3173182},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {computer systems organization},
+}
+
+@inproceedings{Ginsbach:2017:DEG:3049832.3049862,
+ author = {Ginsbach, Philip and O\&\#039;Boyle, Michael F. P.},
+ title = {Discovery and Exploitation of General Reductions: A Constraint Based Approach},
+ booktitle = {Proceedings of the 2017 International Symposium on Code Generation and Optimization},
+ series = {CGO '17},
+ year = {2017},
+ isbn = {978-1-5090-4931-8},
+ location = {Austin, USA},
+ pages = {269--280},
+ numpages = {12},
+ url = {http://dl.acm.org/citation.cfm?id=3049832.3049862},
+ acmid = {3049862},
+ publisher = {IEEE Press},
+ address = {Piscataway, NJ, USA},
+ keywords = {compiler analysis, computational idioms, constraint solver, parallelization, reduction operations},
+} 
+
+@inproceedings{1669122,
+ author = {Jung, Changhee and Clark, Nathan},
+ title = {DDT: design and evaluation of a dynamic program analysis for optimizing data structure usage},
+ booktitle = {MICRO 42: Proceedings of the 42nd Annual IEEE/ACM International Symposium on Microarchitecture},
+ year = {2009},
+ isbn = {978-1-60558-798-1},
+ pages = {56--66},
+ location = {New York, New York},
+ doi = {http://doi.acm.org/10.1145/1669112.1669122},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@inproceedings{Sagiv:1999:PSA:292540.292552,
+ author = {Sagiv, Mooly and Reps, Thomas and Wilhelm, Reinhard},
+ title = {Parametric Shape Analysis via 3-valued Logic},
+ booktitle = {Proceedings of the 26th ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+ series = {POPL '99},
+ year = {1999},
+ isbn = {1-58113-095-3},
+ location = {San Antonio, Texas, USA},
+ pages = {105--118},
+ numpages = {14},
+ url = {http://doi.acm.org/10.1145/292540.292552},
+ doi = {10.1145/292540.292552},
+ acmid = {292552},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@inproceedings{Wilhelm:2000:SA:647476.760384,
+ author = {Wilhelm, Reinhard and Sagiv, Shmuel and Reps, Thomas W.},
+ title = {Shape Analysis},
+ booktitle = {Proceedings of the 9th International Conference on Compiler Construction},
+ series = {CC '00},
+ year = {2000},
+ isbn = {3-540-67263-X},
+ pages = {1--17},
+ numpages = {17},
+ url = {http://dl.acm.org/citation.cfm?id=647476.760384},
+ acmid = {760384},
+ publisher = {Springer-Verlag},
+ address = {London, UK, UK},
+}
+
+@inproceedings{Emami:1994:CIP:178243.178264,
+ author = {Emami, Maryam and Ghiya, Rakesh and Hendren, Laurie J.},
+ title = {Context-sensitive Interprocedural Points-to Analysis in the Presence of Function Pointers},
+ booktitle = {Proceedings of the ACM SIGPLAN 1994 Conference on Programming Language Design and Implementation},
+ series = {PLDI '94},
+ year = {1994},
+ isbn = {0-89791-662-X},
+ location = {Orlando, Florida, USA},
+ pages = {242--256},
+ numpages = {15},
+ url = {http://doi.acm.org/10.1145/178243.178264},
+ doi = {10.1145/178243.178264},
+ acmid = {178264},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@article{ml-oboyle,
+  title     = "Machine Learning in Compiler Optimization",
+  abstract  = "In the last decade, machine-learning-based compilation has moved from an obscure research niche to a mainstream activity. In this paper, we describe the relationship between machine learning and compiler optimization and introduce the main concepts of features, models, training, and deployment. We then provide a comprehensive survey and provide a road map for the wide variety of different research areas. We conclude with a discussion on open issues in the area and potential research directions. This paper provides both an accessible introduction to the fast moving area of machine-learning-based compilation and a detailed bibliography of its main achievements.",
+  keywords  = "Code optimization, compiler, machine learning, program tuning",
+  author    = "Zheng Wang and Michael O'Boyle",
+  year      = "2018",
+  month     = "5",
+  day       = "10",
+  doi       = "10.1109/JPROC.2018.2817118",
+  language  = "English",
+  volume    = "106",
+  pages     = "1879 -- 1901",
+  journal   = "Proceedings of the IEEE",
+  issn      = "0018-9219",
+  publisher = "Institute of Electrical and Electronics Engineers Inc.",
+  number    = "11",
+}
+
+@article{Ashouri:2018:SCA:3271482.3197978,
+ author = {Ashouri, Amir H. and Killian, William and Cavazos, John and Palermo, Gianluca and Silvano, Cristina},
+ title = {A Survey on Compiler Autotuning Using Machine Learning},
+ journal = {ACM Comput. Surv.},
+ issue_date = {January 2019},
+ volume = {51},
+ number = {5},
+ month = sep,
+ year = {2018},
+ issn = {0360-0300},
+ pages = {96:1--96:42},
+ articleno = {96},
+ numpages = {42},
+ url = {http://doi.acm.org/10.1145/3197978},
+ doi = {10.1145/3197978},
+ acmid = {3197978},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {Autotuning, compilers, machine learning, optimizations, phase ordering},
+}
+
+@inproceedings{McCabe:1976:CM:800253.807712,
+ author = {McCabe, Thomas J.},
+ title = {A Complexity Measure},
+ booktitle = {Proceedings of the 2nd International Conference on Software Engineering},
+ series = {ICSE '76},
+ year = {1976},
+ location = {San Francisco, California, USA},
+ pages = {407--},
+ url = {http://dl.acm.org/citation.cfm?id=800253.807712},
+ acmid = {807712},
+ publisher = {IEEE Computer Society Press},
+ address = {Los Alamitos, CA, USA},
+ keywords = {Basis, Complexity measure, Control flow, Decomposition, Graph theory, Independence, Linear, Modularization, Programming, Reduction, Software, Testing},
+}
+
+@book{Muchnick:1998:ACD:286076,
+ author = {Muchnick, Steven S.},
+ title = {Advanced Compiler Design and Implementation},
+ year = {1997},
+ isbn = {1-55860-320-4},
+ publisher = {Morgan Kaufmann Publishers Inc.},
+ address = {San Francisco, CA, USA},
+}
+
+@inproceedings{Ghiya:1996:TDC:237721.237724,
+ author = {Ghiya, Rakesh and Hendren, Laurie J.},
+ title = {Is It a Tree, a DAG, or a Cyclic Graph? A Shape Analysis for Heap-directed Pointers in C},
+ booktitle = {Proceedings of the 23rd ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+ series = {POPL '96},
+ year = {1996},
+ isbn = {0-89791-769-3},
+ location = {St. Petersburg Beach, Florida, USA},
+ pages = {1--15},
+ numpages = {15},
+ url = {http://doi.acm.org/10.1145/237721.237724},
+ doi = {10.1145/237721.237724},
+ acmid = {237724},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@inproceedings{Jung:2009:DDE:1669112.1669122,
+ author = {Jung, Changhee and Clark, Nathan},
+ title = {DDT: Design and Evaluation of a Dynamic Program Analysis for Optimizing Data Structure Usage},
+ booktitle = {Proceedings of the 42Nd Annual IEEE/ACM International Symposium on Microarchitecture},
+ series = {MICRO 42},
+ year = {2009},
+ isbn = {978-1-60558-798-1},
+ location = {New York, New York},
+ pages = {56--66},
+ numpages = {11},
+ url = {http://doi.acm.org/10.1145/1669112.1669122},
+ doi = {10.1145/1669112.1669122},
+ acmid = {1669122},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {data structure identification, interface functions, memory graphs},
+}
+
+@article{Almagor:2004:FEC:998300.997196,
+ author = {Almagor, L. and Cooper, Keith D. and Grosul, Alexander and Harvey, Timothy J. and Reeves, Steven W. and Subramanian, Devika and Torczon, Linda and Waterman, Todd},
+ title = {Finding Effective Compilation Sequences},
+ journal = {SIGPLAN Not.},
+ issue_date = {July 2004},
+ volume = {39},
+ number = {7},
+ month = jun,
+ year = {2004},
+ issn = {0362-1340},
+ pages = {231--239},
+ numpages = {9},
+ url = {http://doi.acm.org/10.1145/998300.997196},
+ doi = {10.1145/998300.997196},
+ acmid = {997196},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {adaptive compilers, learning models},
+}
+
+@inproceedings{Dekker:1994:ADS:3107859.3107876,
+ author = {Dekker, Ren{\'e} and Ververs, Frans},
+ title = {Abstract Data Structure Recognition},
+ booktitle = {Proceedings of the 9th International Conference on Knowledge-Based Software Engineering},
+ series = {KBSE'94},
+ year = {1994},
+ isbn = {0-8186-6380-4},
+ location = {Monterey, CA, USA},
+ pages = {133--140},
+ numpages = {8},
+ url = {https://doi.org/10.1109/KBSE.1994.342669},
+ doi = {10.1109/KBSE.1994.342669},
+ acmid = {3107876},
+ publisher = {IEEE Press},
+ address = {Piscataway, NJ, USA},
+}
+
+
+@book{Kennedy:2001:OCM:502981,
+ author = {Kennedy, Ken and Allen, John R.},
+ title = {Optimizing Compilers for Modern Architectures: A Dependence-based Approach},
+ year = {2002},
+ isbn = {1-55860-286-0},
+ publisher = {Morgan Kaufmann Publishers Inc.},
+ address = {San Francisco, CA, USA},
+}
+
+@ARTICLE{atre_ea:2018:ccpe,
+    author = {Atre, Rohit and Huda, Zia Ul and Wolf, Felix and Jannesari, Ali},
+     month = mar,
+     title = {Dissecting Sequential Programs for Parallelization - An Approach Based on Computational Units},
+   journal = {Concurrency and Computation: Practice and Experience},
+    volume = {31},
+    number = {5},
+      year = {2019},
+     pages = {1-12},
+       doi = {10.1002/cpe.4770}
+}
+
+@INPROCEEDINGS{roth_ea:vpa:2018,
+     author = {Roth, Philip C. and Huck, Kevin and Gopalakrishnan, Ganesh and Wolf, Felix},
+      month = nov,
+      title = {Using Deep Learning for Automated Communication Pattern Characterization: Little Steps and Big Challenges},
+  booktitle = {Proc. of the 5th Workshop on Visual Performance Analysis (VPA), held in conjunction with the Supercomputing Conference (SC18), Dallas, TX, USA},
+       year = {2018},
+       note = {(to appear)}
+}
+
+@INPROCEEDINGS{Atre:2017:spaa,
+     author = {Atre, Rohit and Jannesari, Ali and Wolf, Felix},
+      month = jul,
+      title = {Meeting the challenges of parallelizing sequential programs},
+  booktitle = {Proc. of the 29th ACM Symposium on Parallelism in Algorithms and Architectures (SPAA), Washington, DC, USA},
+       year = {2017},
+      pages = {363--365},
+  publisher = {ACM},
+       isbn = {978-1-4503-4593-4},
+        doi = {10.1145/3087556.3087592}
+}
+
+@ARTICLE{Li:2016:discopop,
+    author = {Li, Zhen and Atre, Rohit and Huda, Zia Ul and Jannesari, Ali and Wolf, Felix},
+     month = jul,
+     title = {Unveiling Parallelization Opportunities in Sequential Programs},
+   journal = {Journal of Systems and Software},
+    volume = {117},
+      year = {2016},
+     pages = {282–295},
+       doi = {10.1016/j.jss.2016.03.045}
+}
+
+@INPROCEEDINGS{Huda:2016:parallel_patterns,
+     author = {Huda, Zia Ul and Atre, Rohit and Jannesari, Ali and Wolf, Felix},
+      month = may,
+      title = {Automatic Parallel Pattern Detection in the Algorithm Structure Design Space},
+  booktitle = {Proc. of the 30th IEEE International Parallel and Distributed Processing Symposium (IPDPS), Chicago, USA},
+       year = {2016},
+      pages = {43-52},
+  publisher = {IEEE Computer Society},
+        url = {http://dx.doi.org/10.1109/IPDPS.2016.60},
+        doi = {10.1109/IPDPS.2016.60}
+}
+
+@INCOLLECTION{Li_ea:2015:DiscoPoP_Tools_HPC,
+     author = {Li, Zhen and Atre, Rohit and Ul-Huda, Zia and Jannesari, Ali and Wolf, Felix},
+      title = {DiscoPoP: A Profiling Tool to Identify Parallelization Opportunities},
+  booktitle = {Tools for High Performance Computing 2014, Proc. of the 8th Parallel Tools Workshop,Stuttgart, Germany, October 2014},
+    chapter = {3},
+       year = {2015},
+      pages = {37-54},
+  publisher = {Springer International Publishing},
+       isbn = {978-3-319-16011-5},
+        url = {http://www.springer.com/us/book/9783319160115},
+        doi = {10.1007/978-3-319-16012-2}
+}
+
+@INPROCEEDINGS{Li_ea:2015:task_parallelism,
+     author = {Li, Zhen and Zhao, Bo and Jannesari, Ali and Wolf, Felix},
+      month = nov,
+      title = {Beyond Data Parallelism: Identifying Parallel Tasks in Sequential Programs},
+  booktitle = {Proc. of 15th International Conference on Algorithms and Architectures for Parallel Processing (ICA3PP), Zhangjiajie, China},
+     series = {Lecture Notes in Computer Science},
+     volume = {9531},
+       year = {2015},
+      pages = {569-582},
+  publisher = {Springer International Publishing},
+       isbn = {978-3-319-27139-2},
+        doi = {10.1007/978-3-319-27140-8_39}
+}
+
+@INPROCEEDINGS{fried_ea:2013:icmla,
+     author = {Fried, Daniel and Li, Zhen and Jannesari, Ali and Wolf, Felix},
+      month = {December},
+      title = {Predicting Parallelization of Sequential Programs Using Supervised Learning},
+  booktitle = {Proc. of the 12th IEEE International Conference on Machine Learning and Applications (ICMLA), Miami, FL, USA},
+       year = {2013},
+      pages = {72-77},
+  publisher = {IEEE Computer Society},
+        url = {http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=6786084},
+        doi = {10.1109/ICMLA.2013.108}
+}
+
+@article{Wilson:1994:SIR:193209.193217,
+ author = {Wilson, Robert P. and French, Robert S. and Wilson, Christopher S. and Amarasinghe, Saman P. and Anderson, Jennifer M. and Tjiang, Steve W. K. and Liao, Shih-Wei and Tseng, Chau-Wen and Hall, Mary W. and Lam, Monica S. and Hennessy, John L.},
+ title = {SUIF: An Infrastructure for Research on Parallelizing and Optimizing Compilers},
+ journal = {SIGPLAN Not.},
+ issue_date = {Dec. 1994},
+ volume = {29},
+ number = {12},
+ month = dec,
+ year = {1994},
+ issn = {0362-1340},
+ pages = {31--37},
+ numpages = {7},
+ url = {http://doi.acm.org/10.1145/193209.193217},
+ doi = {10.1145/193209.193217},
+ acmid = {193217},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+@inproceedings{Tournavitis:2009:THA:1542476.1542496,
+ author = {Tournavitis, Georgios and Wang, Zheng and Franke, Bj\"{o}rn and O'Boyle, Michael F.P.},
+ title = {Towards a Holistic Approach to Auto-parallelization: Integrating Profile-driven Parallelism Detection and Machine-learning Based Mapping},
+ booktitle = {Proceedings of the 30th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+ series = {PLDI '09},
+ year = {2009},
+ isbn = {978-1-60558-392-1},
+ location = {Dublin, Ireland},
+ pages = {177--187},
+ numpages = {11},
+ url = {http://doi.acm.org/10.1145/1542476.1542496},
+ doi = {10.1145/1542476.1542496},
+ acmid = {1542496},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {auto-parallelization, machine-learning based parallelism mapping, openmp, profile-driven parallelism detection},
+}
+
+@inproceedings{Manilov:2018:GPI:3178372.3179511,
+ author = {Manilov, Stanislav and Vasiladiotis, Christos and Franke, Bj\"{o}rn},
+ title = {Generalized Profile-guided Iterator Recognition},
+ booktitle = {Proceedings of the 27th International Conference on Compiler Construction},
+ series = {CC 2018},
+ year = {2018},
+ isbn = {978-1-4503-5644-2},
+ location = {Vienna, Austria},
+ pages = {185--195},
+ numpages = {11},
+ url = {http://doi.acm.org/10.1145/3178372.3179511},
+ doi = {10.1145/3178372.3179511},
+ acmid = {3179511},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {Loop iterators, loop analysis},
+}
+
+@article{Ferrante:1987:PDG:24039.24041,
+ author = {Ferrante, Jeanne and Ottenstein, Karl J. and Warren, Joe D.},
+ title = {The Program Dependence Graph and Its Use in Optimization},
+ journal = {ACM Trans. Program. Lang. Syst.},
+ issue_date = {July 1987},
+ volume = {9},
+ number = {3},
+ month = jul,
+ year = {1987},
+ issn = {0164-0925},
+ pages = {319--349},
+ numpages = {31},
+ url = {http://doi.acm.org/10.1145/24039.24041},
+ doi = {10.1145/24039.24041},
+ acmid = {24041},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@article{scikit-learn,
+ title={Scikit-learn: Machine Learning in {P}ython},
+ author={Pedregosa, F. and Varoquaux, G. and Gramfort, A. and Michel, V.
+         and Thirion, B. and Grisel, O. and Blondel, M. and Prettenhofer, P.
+         and Weiss, R. and Dubourg, V. and Vanderplas, J. and Passos, A. and
+         Cournapeau, D. and Brucher, M. and Perrot, M. and Duchesnay, E.},
+ journal={Journal of Machine Learning Research},
+ volume={12},
+ pages={2825--2830},
+ year={2011}
+}
+
+@article{McCabe:1976:CM:1313324.1313586,
+ author = {McCabe, T. J.},
+ title = {A Complexity Measure},
+ journal = {IEEE Trans. Softw. Eng.},
+ issue_date = {July 1976},
+ volume = {2},
+ number = {4},
+ month = jul,
+ year = {1976},
+ issn = {0098-5589},
+ pages = {308--320},
+ numpages = {13},
+ url = {https://doi.org/10.1109/TSE.1976.233837},
+ doi = {10.1109/TSE.1976.233837},
+ acmid = {1313586},
+ publisher = {IEEE Press},
+ address = {Piscataway, NJ, USA},
+ keywords = {Basis, complexity measure, control flow, decomposition, graph theory, independence, linear, modularization, programming, reduction, software, testing, testing, Basis, complexity measure, control flow, decomposition, graph theory, independence, linear, modularization, programming, reduction, software},
+}
+
+@misc{icc-compiler,
+ author = {Intel Corporation},
+ title = {Intel C/C++ Compiler (ICC)},
+ year = {1985-2018},
+ url = {https://software.intel.com/en-us/c-compilers},
+}
+
+@inproceedings{Lattner:2004:LCF:977395.977673,
+ author = {Lattner, Chris and Adve, Vikram},
+ title = {LLVM: A Compilation Framework for Lifelong Program Analysis \& Transformation},
+ booktitle = {Proceedings of the International Symposium on Code Generation and Optimization: Feedback-directed and Runtime Optimization},
+ series = {CGO '04},
+ year = {2004},
+ isbn = {0-7695-2102-9},
+ location = {Palo Alto, California},
+ pages = {75--},
+ url = {http://dl.acm.org/citation.cfm?id=977395.977673},
+ acmid = {977673},
+ publisher = {IEEE Computer Society},
+ address = {Washington, DC, USA},
+}
+
+@misc{llvm-compiler-infrastructure,
+ author = {LLVM Developer Group},
+ title = {The LLVM Compiler Infrastructure},
+ year = {2002-2019},
+ url = {https://llvm.org/},
+}
+
+@misc{github-ppar-tool,
+ author = {Aleksandr Maramzin},
+ title = {Pervasive Parallelism Tool},
+ year = {2018-2019},
+ url = {https://github.com/av-maramzin/PParMetrics},
+}
+
+@misc{github-icc-parser,
+ author = {Aleksandr Maramzin},
+ title = {Pervasive Parallelism Tool},
+ year = {2018-2019},
+ url = {https://github.com/av-maramzin/icc-opt-report-compiler},
+}
+
+@article{Bacon:1994:CTH:197405.197406,
+ author = {Bacon, David F. and Graham, Susan L. and Sharp, Oliver J.},
+ title = {Compiler Transformations for High-performance Computing},
+ journal = {ACM Comput. Surv.},
+ issue_date = {Dec. 1994},
+ volume = {26},
+ number = {4},
+ month = dec,
+ year = {1994},
+ issn = {0360-0300},
+ pages = {345--420},
+ numpages = {76},
+ url = {http://doi.acm.org/10.1145/197405.197406},
+ doi = {10.1145/197405.197406},
+ acmid = {197406},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {compilation, dependence analysis, locality, multiprocessors, optimization, parallelism, superscalar processors, vectorization},
+}
+
+@book{James:2014:ISL:2517747,
+ author = {James, Gareth and Witten, Daniela and Hastie, Trevor and Tibshirani, Robert},
+ title = {An Introduction to Statistical Learning: With Applications in R},
+ year = {2014},
+ isbn = {1461471370, 9781461471370},
+ publisher = {Springer Publishing Company, Incorporated},
+}
